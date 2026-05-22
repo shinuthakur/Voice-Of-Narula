@@ -12,7 +12,7 @@ import { useState, useEffect, useRef } from "react";
  
 const DEPARTMENTS = ["CSE","ECE","ME","CE","EE","IT","MBA","BBA","BCA","MCA","Other"];
 const YEARS = ["1st Year","2nd Year","3rd Year","4th Year","PG"];
- 
+ // eslint-disable-next-line no-unused-vars
 const INITIAL_SUPPORTERS = [
   { name: "Priya Sharma", dept: "CSE", year: "3rd Year", msg: "We deserve a dignified learning environment. Please turn on the ACs." },
   { name: "Arjun Mehta", dept: "ECE", year: "2nd Year", msg: "Concentrating in 42°C heat is simply impossible." },
@@ -57,6 +57,7 @@ function useInView(ref) {
     const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) setVisible(true); }, { threshold: 0.15 });
     if (ref.current) obs.observe(ref.current);
     return () => obs.disconnect();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return visible;
 }
@@ -167,6 +168,7 @@ function Navbar({ onNav }) {
  
 function PinnedMessage() {
   const [expanded, setExpanded] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const SHORT = `We respectfully bring to your attention the difficulties being faced due to extreme heat conditions. While the college infrastructure has recently been upgraded with air conditioning units, the facilities are yet to be made operational...`;
   return (
     <section style={{
