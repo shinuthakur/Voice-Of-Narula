@@ -439,12 +439,14 @@ function SupportForm({ onSubmit }) {
     setLoading(true);
     try {
       await onSubmit({ ...form });
-      setSuccess(true);
       setForm({ name: "", dept: "", year: "", msg: "" });
+      setLoading(false);
+      setSuccess(true);       // ← moved to very last, after setLoading(false)
     } catch (err) {
       console.error("Submit error:", err);
+      setLoading(false);
+      alert("Something went wrong. Please check your connection and try again.");
     }
-    setLoading(false);
   };
  
   const inputStyle = (field) => ({
