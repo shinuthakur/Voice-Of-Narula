@@ -15,12 +15,12 @@ const YEARS = ["1st Year","2nd Year","3rd Year","4th Year","PG"];
 const BASE_COUNT = 1248; // Static base — real submissions add on top
  
 const INITIAL_SUPPORTERS = [
-  { name: "Priya Sharma", dept: "CSE", year: "3rd Year", msg: "We deserve a dignified learning environment. Please turn on the ACs." },
-  { name: "Arjun Mehta", dept: "ECE", year: "2nd Year", msg: "Concentrating in 42°C heat is simply impossible." },
-  { name: "Sneha Roy", dept: "MBA", year: "1st Year", msg: "Student wellbeing must be a priority. Respectfully requesting action." },
+  { name: "Shivam Thakur", dept: "AIML", year: "2rd Year", msg: "Concentrating in 42°C heat is simply impossible.Student wellbeing must be a priority. Respectfully requesting action." },
+  { name: "Aman Hassan", dept: "CSE", year: "4nd Year", msg: "We deserve a dignified learning environment. Please turn on the ACs." },
+  { name: "Anushka Shankar", dept: "AIML", year: "2st Year", msg: "studying in this much heat will burn us. Respectfully requesting action" },
   { name: "Rahul Das", dept: "ME", year: "4th Year", msg: "The infrastructure exists — please use it." },
   { name: "Anika Gupta", dept: "IT", year: "2nd Year", msg: "Health and learning go hand in hand." },
-  { name: "Tanmay Sen", dept: "CE", year: "3rd Year", msg: "Every student deserves comfort while pursuing their future." },
+  { name: "Surya Nandan", dept: "CE", year: "3rd Year", msg: "Every student deserves comfort while pursuing their future." },
 ];
  
 const QUOTES = [
