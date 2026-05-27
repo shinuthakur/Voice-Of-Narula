@@ -361,7 +361,7 @@ function Hero({ onNav, supporters }) {
           fontSize: isMobile ? 14 : 16, color: "#64748b",
           maxWidth: 540, margin: "0 auto 32px", lineHeight: 1.75,
         }}>
-          Students of Narula Institute are respectfully requesting the activation of classroom air conditioning facilities during extreme heatwave conditions — for a healthier, more productive academic environment.
+          Students of Narula Institute of Technology are respectfully requesting the activation of classroom air conditioning facilities during extreme heatwave conditions — for a healthier, more productive academic environment.
         </p>
  
         {/* CTA Buttons */}
